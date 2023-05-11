@@ -7,15 +7,23 @@ import {
 
 import { auth } from '../../firebase/firebase.js';
 
+import logo from '../../img/lofeedsemfundo.png';
+import sair from '../../img/logout.png';
+import postar from '../../img/checked.png';
+import user from '../../img/profile-user.png';
+import editar from '../../img/editar-informacao.png';
+import checked from '../../img/checked.png';
+import deletar from '../../img/botao-apagar.png';
+
 export default () => {
   const container = document.createElement('div');
   const template = `
      <header class="header">
        <div class="div-img-logo">
-         <img class="logo-feed" src='./img/lofeedsemfundo.png' alt='logo HelParents' class='img-logo'>
+         <img class="logo-feed" src=${logo} alt='logo HelParents' class='img-logo'>
       </div>
       <button class="btn-sair">
-       <img class="img-sair" src='./img/logout.png' alt='logo HelParents' class='img-logo'>
+       <img class="img-sair" src=${sair} alt='logo HelParents' class='img-logo'>
      </button>
     </header>
     <main>
@@ -23,7 +31,7 @@ export default () => {
         <textarea id="txt-area" cols="69" rows="4" placeholder= "Escreva seu post"></textarea>
         <div class="position-btn-postar">
           <button class="btn-postar" id="bntPublicar">
-           <img class='postar-img' src='./img/checked.png' alt='logo-google'>
+           <img class='postar-img' src=${postar} alt='logo-google'>
           </button>
         </div>
        <ul class="feed-postado">
@@ -40,7 +48,7 @@ export default () => {
       <li class="areaPostado li" id="${posts.id}">
         <div class="position-username-data">
           <div class="position-username">
-              <img class="img-user-name" src="./img/profile-user.png" alt="user-name">
+              <img class="img-user-name" src=${user} alt="user-name">
               <p class="user-name">${posts.username}</p>
             </div>
             <p class="post-date">${posts.date}</p>
@@ -52,13 +60,13 @@ export default () => {
               </button>
                 ${posts.userId === auth.currentUser.uid ? `  
               <button id="${posts.id}editar" class="btn-postar editado">
-                <img class='editar-img' src='./img/editar-informacao.png' alt='editar'>
+                <img class='editar-img' src=${editar} alt='editar'>
               </button>
               <button id="${posts.id}salvar" class="btn-postar editado">
-                <img class='editar-img' src='./img/checked.png' alt='salvar'>
+                <img class='editar-img' src=${checked} alt='salvar'>
               </button>
               <button id="${posts.id}deletar" class="btn-postar delete">
-                <img class='excluir-img' src='./img/botao-apagar.png' alt='deletar'>
+                <img class='excluir-img' src=${deletar} alt='deletar'>
               </button>
     
               ` : ''}
