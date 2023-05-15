@@ -99,10 +99,12 @@ Para a produção da página, construímos três `Histórias de Usuário`, confo
     Tela 2: Tela de cadastro.
   </div>
   <div align="center">
-    <img alt="tela feed" width="550" src=""/></br>
+    <img alt="tela feed" width="800" src="https://github.com/andraderika/SAP009-social-network/assets/109312804/d0004c6d-497c-443a-a04f-20e973538130"/></br>
     Tela 3: Tela do feed.
   </div>
+
 </div>
+
 
 ##
 
@@ -119,6 +121,11 @@ Para a produção da página, construímos três `Histórias de Usuário`, confo
   <h3>Mobile</h3>
 </div>
 
+ <div style="display:flex">
+   <div align="center">
+     <img alt="tela feed" width="800" src="https://github.com/andraderika/SAP009-social-network/assets/109312804/d3f30868-a81f-4804-9243-48be5affe5de"/>
+  </div>
+     
 
 ##
 
